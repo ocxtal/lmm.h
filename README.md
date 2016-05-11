@@ -1,4 +1,4 @@
-# liblmm
+# lmm.h
 
 Thin malloc wrapper, providing small memory allocation on existing region in a context local way, without aggressive memory management.
 
