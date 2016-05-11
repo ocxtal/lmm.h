@@ -19,9 +19,6 @@
 #include <stdlib.h>
 
 
-/* inline directive */
-#define _force_inline				inline
-
 /* roundup */
 #define _lmm_cutdown(x, base)		( (x) & ~((base) - 1) )
 #define _lmm_roundup(x, base)		( ((x) + (base) - 1) & ~((base) - 1) )
@@ -70,6 +67,7 @@ lmm_t *lmm_init(
 /**
  * @fn lmm_clean
  */
+static inline
 void lmm_clean(
 	lmm_t *lmm)
 {
